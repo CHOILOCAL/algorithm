@@ -7,10 +7,11 @@ function timeout(cb) {
     setTimeout(() => {
         console.log('CHOILOCAL');
         // console.log('Done!');
-        cb()
+        cb() // 매개변수가 들어옴, 실행 보장
     }, 3000)
 }
 
+// 매개변수 생성
 timeout(() => {
     console.log('Done!')
 });
